@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>BCode</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <header>
+          <h1 class="symbol1"><</h1>
+          <h1>FOLLOW YOUR <span class="title">OWN PATH</span> WHILE CODING</h1>
+          <p>
+            Let us alert you about our coding courses and updates here in the
+            <span class="name">BCode School.</span>
+          </p>
+          <h1 class="symbol2">></h1>
+        </header>
+
+        <form action="/cad" id="survey-form" method="post">
+          <div class="form-group">
+            <label id="first-label" for="first-name">Name:</label>
+            <input type="text" name="name" id="name" maxlength="25" class="form-control" required />
+          </div>
+
+          <div class="form-group">
+            <label id="email-label" for="email">E-mail:</label>
+            <input type="email" name="email" id="email" class="form-control" required />
+          </div>
+
+          <div class="form-group">
+            <label id="number-label" for="number">Birthdate:</label>
+            <input type="date" name="date" id="date" min="10" max="99" class="form-control" />
+          </div>
+
+          <div class="form-group">
+            <p>What's your level of coding?</p>
+            <div class="box-options">
+              <label class="opt"> <input name="exp" value="junior" type="radio" class="input-radio" checked />Junior</label>
+              <label> <input name="exp" value="intermediate" type="radio" class="input-radio" />Intermediate</label>
+              <label><input name="exp" value="senior" type="radio" class="input-radio" />Senior</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea id="comments" class="input-textarea" name="comment"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+      <footer>Survey Form created by Guilherme Lopes</footer>
+    </div>
+    <script src="/js/client.js"></script>
+  </body>
+</html>
