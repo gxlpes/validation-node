@@ -19,11 +19,16 @@ app.use(
 );
 
 app.get("/", (req, res) => {
+  if (req.session.errorsSession) {
+    let arrayErrors = req.session.errorsSession;
+    return res.render("index");
+  }
   res.sendFile(path.join(__dirname + "/index.html"));
 });
 
-app.post("/cad", (req, res) => {
+app.post("/formData", (req, res) => {
   // getting input form data
+  console.log(req.Params.body.name);
   let name = req.body.name;
   let email = req.body.email;
   let exp = req.body.exp;
@@ -68,7 +73,6 @@ app.post("/cad", (req, res) => {
   // if success
   console.log("Validação feita!");
   req.session.successSession = true;
-  return res.redirect("/");
 });
 
 app.listen(port, () => {

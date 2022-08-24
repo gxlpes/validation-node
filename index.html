@@ -24,7 +24,11 @@
           <h1 class="symbol2">></h1>
         </header>
 
-        <form action="/cad" id="survey-form" method="post">
+        <div class="errorContainer">
+          <ul class="error"></ul>
+        </div>
+
+        <form id="survey-form">
           <div class="form-group">
             <label id="first-label" for="first-name">Name:</label>
             <input type="text" name="name" id="name" maxlength="25" class="form-control" required />
