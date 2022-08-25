@@ -1,2 +1,2 @@
-# validation-node
-Repo created to validate forms input on the server-side.
+# Validation
+Project created to validate forms input on the server-side using Node/Express.
